@@ -1,0 +1,84 @@
+<head>
+  <title>GBpractice02</title>
+</head>
+
+<body>
+  {{> main}}
+</body>
+
+<template name="main">
+<!-- <div class="container">
+    <form class="form-inline" role="form" >
+        <div class="form-group">
+            <label class="sr-only" for="inputEmail">Email</label>
+            <input type="text" class="form-control" id="inputEmail" name ="text">
+        </div>
+        <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+
+    <form action="" class="form-inline">
+    	<div class="form-group">
+    		<label for=""></label>
+    	</div>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>text</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each posts}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{text}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div> -->
+
+
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<form role="form">
+				<div class="form-group">
+					<label for="exampleInputEmail1">Name</label><input type="text" class="form-control" autocomplete="off" name="username">
+					 <label for="exampleInputEmail1">Text</label><input type="text" class="form-control" autocomplete="off" name="text">
+				</div>
+				 <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>
+							name
+						</th>
+						<th>
+							text
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+				{{#each posts}}
+					<tr>
+						<td>
+							{{name}}
+						</td>
+						<td>
+							{{text}}
+						</td>
+					</tr>
+				{{/each}}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+</body>
+
+</template>
